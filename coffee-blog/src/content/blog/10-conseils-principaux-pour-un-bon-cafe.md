@@ -1,10 +1,11 @@
 ---
 title: 'Les 10 conseils principaux pour faire un bon café à la maison'
-description: 'Les 10 conseils principaux pour faire un bon café à la maison'
-pubDate: 'April 30 2025'
+description: 'Découvrez 10 conseils pratiques pour préparer un excellent café chez vous : choix des grains, mouture, eau, température, dosage et bien plus.'
+pubDate: 'April 29 2025'
 heroImage: '/blog-placeholder-2.jpg'
 draft: false
 ---
+**TL;DR?** Passez directement notre article [L'anti-sèche du café : 10 points pour un bon café](../anti-seche-10-points-pour-un-bon-cafe/)
 
 Vous aimez le café, mais vous trouvez qu’il n’a jamais tout à fait le même goût qu’au coffee shop ? Que vous soyez amateur de slow coffee ou adepte de l’espresso à la maison, une chose est sûre : **faire un bon café ne s’improvise pas**. Il ne s’agit pas uniquement de choisir un café de qualité — même si c’est un excellent point de départ. La préparation du café repose sur une série de détails techniques et sensoriels qui, bien maîtrisés, peuvent transformer votre expérience au quotidien.
 
@@ -67,3 +68,7 @@ Préparer un bon café à la maison, ce n’est pas une question de chance — c
 Mais n’oubliez pas : le meilleur café, c’est avant tout celui qui vous plaît. Alors **testez, goûtez, ajustez, explorez**. Chaque tasse peut devenir une petite aventure sensorielle, un moment de calme, de concentration, ou de partage.
 
 [comment]: # (Et vous, quel est votre rituel café préféré ? Partagez vos astuces en commentaire — la communauté des passionnés est là pour échanger, progresser, et savourer ensemble.)
+
+## Pour en savoir plus
+
+- [L'anti-sèche pour un bon café à la maison](../anti-seche-10-points-pour-un-bon-cafe/)
