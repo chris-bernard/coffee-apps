@@ -8,8 +8,13 @@
     "dist"
   ],
   "compilerOptions": {
-    "strictNullChecks": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "jsxImportSource": "preact",
+    "paths": {
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@layouts/*": ["./src/layouts/*"]
+    },
+    "strictNullChecks": true,
   }
 }

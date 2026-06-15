@@ -1,5 +1,8 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import Layout from '@layouts/BlogPost.astro';
+import {SITE_TITLE} from '../consts.ts';
+
+const siteTitle = SITE_TITLE;
 ---
 
 <Layout
@@ -9,7 +12,7 @@ import Layout from '../layouts/BlogPost.astro';
         heroImage="/blog-placeholder-about.jpg"
 >
     <p>
-        Bienvenue sur Coffee Paradise, votre rendez-vous dédié au café sous toutes ses formes. Que vous soyez amateur de café de spécialité, curieux des méthodes d'extraction manuelles, ou simplement à la recherche de conseils pour préparer un bon
+        Bienvenue sur {siteTitle}, votre rendez-vous dédié au café sous toutes ses formes. Que vous soyez amateur de café de spécialité, curieux des méthodes d'extraction manuelles, ou simplement à la recherche de conseils pour préparer un bon
         café à la maison, vous êtes ici chez vous.
     </p>
 

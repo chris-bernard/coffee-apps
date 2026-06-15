@@ -1,0 +1,26 @@
+---
+interface Props {
+	roastLevel: string;
+	origin: string;
+	brewMethod: string;
+}
+
+const { roastLevel, origin, brewMethod } = Astro.props;
+---
+
+<div class="brew-metrics">
+	<div class="brew-metrics-item">
+		<span class="text-label-sm" style="color: var(--on-surface-variant); margin-bottom: 4px;">Roast Level</span>
+		<span class="brew-metrics-value">{roastLevel}</span>
+	</div>
+	<div style="width: 1px; height: 32px; background-color: var(--outline-variant); opacity: 0.5;"></div>
+	<div class="brew-metrics-item">
+		<span class="text-label-sm" style="color: var(--on-surface-variant); margin-bottom: 4px;">Origin</span>
+		<span class="brew-metrics-value">{origin}</span>
+	</div>
+	<div style="width: 1px; height: 32px; background-color: var(--outline-variant); opacity: 0.5;"></div>
+	<div class="brew-metrics-item">
+		<span class="text-label-sm" style="color: var(--on-surface-variant); margin-bottom: 4px;">Brew Method</span>
+		<span class="brew-metrics-value">{brewMethod}</span>
+	</div>
+</div>
