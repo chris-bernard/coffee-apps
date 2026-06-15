@@ -45,32 +45,41 @@ import { SITE_TITLE } from '../consts';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		background: var(--surface);
+		border-bottom: 1px solid var(--outline-variant);
 	}
 	h2 {
 		margin: 0;
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 
 	h2 a,
 	h2 a.active {
 		text-decoration: none;
+		color: var(--on-surface);
 	}
 	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		max-width: var(--container-max);
+		margin: 0 auto;
 	}
 	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
+		padding: 1.5em 1em;
+		color: var(--on-surface-variant);
+		border-bottom: 2px solid transparent;
 		text-decoration: none;
+		font-family: var(--font-family-body);
+		font-weight: 500;
+		text-transform: uppercase;
+		font-size: 14px;
+		letter-spacing: 0.05em;
 	}
 	nav a.active {
 		text-decoration: none;
-		border-bottom-color: var(--accent);
+		color: var(--primary);
+		border-bottom-color: var(--primary);
 	}
 	.social-links,
 	.social-links a {
