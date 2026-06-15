@@ -1,6 +1,7 @@
 // @ts-check
 import {defineConfig} from 'astro/config';
 import mdx from '@astrojs/mdx';
+import preact from '@astrojs/preact';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from "@tailwindcss/vite";
 
@@ -9,6 +10,7 @@ export default defineConfig({
     site: 'https://coffee-paradise.com',
     integrations: [
         mdx(),
+        preact(),
         sitemap({
             filter: (page) =>
                 page !== 'https://coffee-paradise.com/blog/5-methodes-d-extraction-du-cafe/' &&
