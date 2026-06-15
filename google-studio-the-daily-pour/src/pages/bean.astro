@@ -1,0 +1,130 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Anatomy of the Bean">
+	<div class="max-w-7xl mx-auto px-6 py-12 space-y-24">
+		<header class="max-w-4xl space-y-6">
+			<span class="text-xs text-on-tertiary-container uppercase tracking-[0.3em] font-bold">Terroir & Origin</span>
+			<h1 class="text-6xl font-serif font-black text-primary leading-none tracking-tight">Anatomy of the Bean</h1>
+			<p class="text-2xl text-on-surface-variant italic leading-relaxed max-w-2xl">
+				A deep dive into the botanical origins, processing methods, and the chemistry that defines flavor.
+			</p>
+		</header>
+
+		<!-- Anatomy Diagrams -->
+		<section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+			<div class="relative group">
+				<div class="absolute -inset-4 bg-stone-100/50 rounded-2xl -z-10 transition-all group-hover:bg-stone-200/50"></div>
+				<img 
+					class="w-full h-auto rounded-lg shadow-2xl transition-transform duration-1000 group-hover:scale-[1.02]" 
+					src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHXn0hYdK-r5n-0w_A0r690I6D11pQ_fE8C6C388l5pW7_F5W4zX64B47U66A4E5L46B3O4E6A4C6A5f7-f5p8-P7z6X2V5u-z8W1P7n-N4Z2r_o1p6e7Q6Z6c6u-k6y-w7Z6x-u-k6y-w7Z6x-u-k6y-w" 
+					alt="Coffee cherry anatomy"
+					onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&q=80&w=800'"
+				/>
+				<div class="absolute top-1/4 -left-8 bg-white/90 backdrop-blur-sm p-4 border border-stone-200 rounded shadow-lg max-w-[200px]">
+					<h3 class="text-sm font-bold uppercase tracking-widest text-amber-900 mb-1">The Silver Skin</h3>
+					<p class="text-[10px] text-stone-600 font-serif italic">The thin layer covering each bean that creates 'chaff' during roasting.</p>
+				</div>
+				<div class="absolute bottom-1/4 -right-8 bg-white/90 backdrop-blur-sm p-4 border border-stone-200 rounded shadow-lg max-w-[200px]">
+					<h3 class="text-sm font-bold uppercase tracking-widest text-amber-900 mb-1">Mucilage</h3>
+					<p class="text-[10px] text-stone-600 font-serif italic">The sticky, sugary layer between the fruit and the parchment.</p>
+				</div>
+			</div>
+			<div class="space-y-12">
+				<div class="space-y-4">
+					<h2 class="text-3xl font-serif font-bold text-primary italic">The Cherry to the Bean</h2>
+					<p class="text-on-surface-variant leading-relaxed font-serif text-lg">Understanding the layered structure of the coffee fruit is essential to grasping how different processing methods impact the final flavor profile in your cup.</p>
+				</div>
+				<div class="grid grid-cols-1 gap-8">
+					<div class="flex gap-6 items-start">
+						<span class="text-4xl font-serif italic text-stone-300">01</span>
+						<div class="space-y-2">
+							<h4 class="text-sm uppercase font-black tracking-widest text-stone-900">The Outer Skin (Exocarp)</h4>
+							<p class="text-sm text-stone-500 leading-relaxed italic">The protective layer that determines ripeness through color, changing from green to deep burgundy.</p>
+						</div>
+					</div>
+					<div class="flex gap-6 items-start">
+						<span class="text-4xl font-serif italic text-stone-300">02</span>
+						<div class="space-y-2">
+							<h4 class="text-sm uppercase font-black tracking-widest text-stone-900">The Pulp (Mesocarp)</h4>
+							<p class="text-sm text-stone-500 leading-relaxed italic">Rich in sugars and pectins, this layer is crucial for natural processing techniques.</p>
+						</div>
+					</div>
+					<div class="flex gap-6 items-start">
+						<span class="text-4xl font-serif italic text-stone-300">03</span>
+						<div class="space-y-2">
+							<h4 class="text-sm uppercase font-black tracking-widest text-stone-900">The Bean (Endosperm)</h4>
+							<p class="text-sm text-stone-500 leading-relaxed italic">Two seeds facing each other, storing the oils and acids we crave.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Processing Methods Table -->
+		<section class="bg-stone-100 p-12 rounded-2xl border border-stone-200 shadow-inner">
+			<h2 class="text-2xl font-serif font-black text-center mb-12 uppercase tracking-[0.2em] italic">Processing Rituals</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+				<div class="text-center space-y-4">
+					<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto shadow-md border border-stone-200">
+						<span class="material-symbols-outlined text-amber-900">sunny</span>
+					</div>
+					<h3 class="text-xl font-serif font-bold text-primary">Natural Process</h3>
+					<p class="text-sm text-stone-500 leading-relaxed italic">Dried whole in the sun. Results in fruity, heavy-bodied cups with wine-like acidity.</p>
+					<span class="text-[10px] uppercase font-bold text-amber-700 tracking-widest">Flavor High: Berry, Fermented</span>
+				</div>
+				<div class="text-center space-y-4">
+					<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto shadow-md border border-stone-200">
+						<span class="material-symbols-outlined text-amber-900">water_drop</span>
+					</div>
+					<h3 class="text-xl font-serif font-bold text-primary">Washed Process</h3>
+					<p class="text-sm text-stone-500 leading-relaxed italic">Fruit is removed before drying. Highlights the distinct terroir with a clean, bright acidity.</p>
+					<span class="text-[10px] uppercase font-bold text-amber-700 tracking-widest">Flavor High: Floral, Citrus</span>
+				</div>
+				<div class="text-center space-y-4">
+					<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto shadow-md border border-stone-200">
+						<span class="material-symbols-outlined text-amber-900">hive</span>
+					</div>
+					<h3 class="text-xl font-serif font-bold text-primary">Honey Process</h3>
+					<p class="text-sm text-stone-500 leading-relaxed italic">Some mucilage is left on the bean. A hybrid approach offering balanced sweetness and body.</p>
+					<span class="text-[10px] uppercase font-bold text-amber-700 tracking-widest">Flavor High: Caramel, Syrupy</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- Botanical Map -->
+		<section class="space-y-12">
+			<div class="text-center max-w-2xl mx-auto space-y-4">
+				<h2 class="text-4xl font-serif font-bold italic">The Genetic Tree</h2>
+				<p class="text-stone-500 italic">Exploring the vast lineages of Coffea Arabica and its resilient cousins.</p>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="bg-white border-b-4 border-amber-900 p-8 shadow-xl space-y-6">
+					<h3 class="text-2xl font-serif font-black underline decoration-stone-200 underline-offset-8 italic">Typica</h3>
+					<p class="text-sm text-stone-600 leading-relaxed font-serif">The genetic mother of various varieties. Clean, sweet, and classic. Highly susceptible to leaf rust.</p>
+					<div class="pt-4 flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-stone-400">
+						<span>Legacy Variety</span>
+						<span class="bg-stone-100 px-2 py-1 rounded">Heritage</span>
+					</div>
+				</div>
+				<div class="bg-white border-b-4 border-amber-700 p-8 shadow-xl space-y-6">
+					<h3 class="text-2xl font-serif font-black underline decoration-stone-200 underline-offset-8 italic">Bourbon</h3>
+					<p class="text-sm text-stone-600 leading-relaxed font-serif">Naturally mutated on Réunion Island. Known for intense sweetness and deep caramel notes.</p>
+					<div class="pt-4 flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-stone-400">
+						<span>High Yield Potential</span>
+						<span class="bg-amber-50 text-amber-800 px-2 py-1 rounded">Sweet</span>
+					</div>
+				</div>
+				<div class="bg-white border-b-4 border-amber-600 p-8 shadow-xl space-y-6">
+					<h3 class="text-2xl font-serif font-black underline decoration-stone-200 underline-offset-8 italic">Geisha</h3>
+					<p class="text-sm text-stone-600 leading-relaxed font-serif">The crown jewel of modern coffee. Exotic floral notes of jasmine and tea-like elegance.</p>
+					<div class="pt-4 flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-stone-400">
+						<span>Competition Grade</span>
+						<span class="bg-amber-100 text-amber-900 px-2 py-1 rounded">Exotic</span>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</MainLayout>

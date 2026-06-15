@@ -1,0 +1,108 @@
+---
+import '../index.css';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="A high-end editorial coffee journal exploring heritage beans and artisanal brewing rituals." />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | The Daily Pour</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet" />
+	</head>
+	<body class="paper-grain">
+		<div class="texture-overlay"></div>
+		
+		<header class="bg-stone-50 border-b border-stone-200 sticky top-0 z-[60] shadow-sm">
+			<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center w-full">
+				<div class="flex items-center gap-4">
+					<button class="text-primary hover:text-amber-700 transition-colors">
+						<span class="material-symbols-outlined">menu</span>
+					</button>
+				</div>
+				<a href="/" class="text-2xl font-serif font-bold text-primary italic tracking-tight hover:opacity-80 transition-opacity">
+					The Daily Pour
+				</a>
+				<div class="flex items-center gap-4">
+					<button class="text-primary hover:text-amber-700 transition-colors">
+						<span class="material-symbols-outlined">search</span>
+					</button>
+				</div>
+			</div>
+			<nav class="hidden md:flex justify-center border-t border-stone-100 py-3 gap-8">
+				<a href="/" class="font-serif text-primary font-bold border-b-2 border-amber-600">Home</a>
+				<a href="/brewing" class="font-serif text-stone-600 hover:text-amber-700 transition-colors">Brewing</a>
+				<a href="/bean" class="font-serif text-stone-600 hover:text-amber-700 transition-colors">The Bean</a>
+				<a href="/reviews" class="font-serif text-stone-600 hover:text-amber-700 transition-colors">Reviews</a>
+				<a href="/culture" class="font-serif text-stone-600 hover:text-amber-700 transition-colors">Culture</a>
+				<a href="/recipes" class="font-serif text-stone-600 hover:text-amber-700 transition-colors">Recipes</a>
+			</nav>
+		</header>
+
+		<main>
+			<slot />
+		</main>
+
+		<footer class="bg-stone-900 text-stone-200 py-16 mt-24 border-t border-stone-800">
+			<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+				<div class="space-y-4">
+					<h2 class="text-lg font-serif font-black text-stone-100 italic tracking-tight">The Daily Pour</h2>
+					<p class="font-serif text-sm tracking-wide text-stone-400 leading-relaxed">
+						A digital journal dedicated to the ritual of the slow pour, the history of the bean, and the architecture of the coffee house.
+					</p>
+					<div class="flex gap-4 justify-center md:justify-start">
+						<span class="material-symbols-outlined cursor-pointer hover:text-white transition-colors">brand_awareness</span>
+						<span class="material-symbols-outlined cursor-pointer hover:text-white transition-colors">coffee</span>
+						<span class="material-symbols-outlined cursor-pointer hover:text-white transition-colors">history</span>
+					</div>
+				</div>
+				<div class="grid grid-cols-2 gap-8">
+					<div class="space-y-4">
+						<h3 class="text-xs uppercase font-bold tracking-widest text-stone-500">The Journal</h3>
+						<ul class="space-y-2 font-serif text-sm">
+							<li><a href="#" class="text-stone-400 hover:text-white transition-colors">Archive</a></li>
+							<li><a href="#" class="text-stone-400 hover:text-white transition-colors">About Us</a></li>
+							<li><a href="#" class="text-stone-400 hover:text-white transition-colors">Subscribe</a></li>
+							<li><a href="#" class="text-stone-400 hover:text-white transition-colors">Contact</a></li>
+						</ul>
+					</div>
+					<div class="space-y-4">
+						<h3 class="text-xs uppercase font-bold tracking-widest text-stone-500">Categories</h3>
+						<ul class="space-y-2 font-serif text-sm">
+							<li><a href="/brewing" class="text-stone-400 hover:text-white transition-colors">Brewing</a></li>
+							<li><a href="/bean" class="text-stone-400 hover:text-white transition-colors">The Bean</a></li>
+							<li><a href="/recipes" class="text-stone-400 hover:text-white transition-colors">Recipes</a></li>
+							<li><a href="/culture" class="text-stone-400 hover:text-white transition-colors">Culture</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="space-y-4 md:text-right">
+					<p class="font-serif text-sm tracking-wide text-stone-400">© 1890-2024 The Daily Pour. Est. in Vienna.</p>
+					<p class="font-serif text-xs text-stone-600">All rights reserved. Printed digitally on natural paper texture.</p>
+					<div class="mt-8 flex md:justify-end gap-2 text-stone-500">
+						<span class="material-symbols-outlined text-4xl opacity-20">coffee_maker</span>
+						<span class="material-symbols-outlined text-4xl opacity-20">eco</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<style is:global>
+			.material-symbols-outlined {
+				font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+			}
+		</style>
+	</body>
+</html>

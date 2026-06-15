@@ -1,0 +1,178 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Brewing & Techniques">
+	<div class="max-w-7xl mx-auto px-6 py-12 space-y-16">
+		<header class="max-w-3xl space-y-6">
+			<span class="text-xs text-on-tertiary-container uppercase tracking-[0.3em] font-bold">The Art of Extraction</span>
+			<h1 class="text-5xl font-serif font-bold text-primary">Brewing & Techniques</h1>
+			<p class="text-xl text-on-surface-variant italic leading-relaxed">
+				From the gentle curve of a V60 to the rugged pressure of the AeroPress, discover the rituals that transform beans into liquid gold.
+			</p>
+		</header>
+
+		<!-- Brewing Basics -->
+		<section class="space-y-8">
+			<div class="flex items-center gap-4">
+				<h2 class="text-3xl font-serif font-semibold text-primary">Brewing Basics</h2>
+				<div class="flex-grow h-px bg-stone-200"></div>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+				<div class="md:col-span-8 bg-surface-container-low p-8 border border-outline-variant/30 rounded-lg relative overflow-hidden flex flex-col justify-end min-h-[400px] shadow-sm">
+					<img 
+						class="absolute inset-0 w-full h-full object-cover opacity-10 grayscale mix-blend-multiply" 
+						src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx7diAqoVXXIg64FgbtHDcHGCN_L6X0zftpE8ZWUd9_uD3StOIcTYeQcjLr7oxHwoztdZ9JciTTWJRAi9O3f4p7Vc07AXNDjz7VPTFn8Vpv3Rl2w-d_BKkAVJAuv_1nSD918L_XJTFf2UZ4O_WxnSqYxzm-eGWPEq2UPz3BVvyI_MhAQbaeQMis6res91oJ8waEQYN8IcXw3J-yyt856Oo2wFX3Zca48ZiX2AMNee3XwuPglcUmiURV69Hv6g8Tkam4pMSX-bVy60" 
+						alt="Precision"
+					/>
+					<div class="relative z-10 space-y-6">
+						<span class="text-xs bg-primary text-white px-3 py-1 rounded-full font-bold uppercase tracking-widest">Essential</span>
+						<h3 class="text-4xl font-serif font-bold text-primary">The Golden Ratio</h3>
+						<p class="text-on-surface-variant max-w-lg italic">The foundation of every great cup starts with 60 grams of coffee per 1 liter of water. Precision in measurement is the bridge between a mediocre morning and a transcendent ritual.</p>
+						<div class="flex gap-4">
+							<div class="bg-surface-container border border-outline-variant p-4 text-center min-w-[100px]">
+								<span class="text-[10px] text-surface-tint block uppercase font-bold tracking-widest mb-1">Ratio</span>
+								<span class="text-lg font-bold">1:16</span>
+							</div>
+							<div class="bg-surface-container border border-outline-variant p-4 text-center min-w-[100px]">
+								<span class="text-[10px] text-surface-tint block uppercase font-bold tracking-widest mb-1">Temp</span>
+								<span class="text-lg font-bold">92-96°C</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="md:col-span-4 grid grid-rows-2 gap-6">
+					<div class="bg-primary-container p-8 rounded-lg flex flex-col justify-center text-on-primary-container shadow-md">
+						<span class="material-symbols-outlined text-4xl mb-4 opacity-80">water_drop</span>
+						<h4 class="text-2xl font-serif font-bold text-white mb-2">Water Quality</h4>
+						<p class="text-stone-400 text-sm leading-relaxed text-italic">98% of your coffee is water. Use filtered, soft water to let the delicate bean profiles shine.</p>
+					</div>
+					<div class="bg-secondary-container p-8 rounded-lg flex flex-col justify-center shadow-md">
+						<span class="material-symbols-outlined text-4xl mb-4 text-secondary">texture</span>
+						<h4 class="text-2xl font-serif font-bold text-primary mb-2">The Grind</h4>
+						<p class="text-on-secondary-container text-sm leading-relaxed text-italic">Uniformity is key. A burr grinder ensures each particle extracts at the same rate for perfect balance.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Methods & Gear -->
+		<section class="space-y-8 text-italic">
+			<div class="flex items-center gap-4">
+				<h2 class="text-3xl font-serif font-semibold text-primary">Methods & Gear</h2>
+				<div class="flex-grow h-px bg-stone-200"></div>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+				<!-- V60 Card -->
+				<div class="group bg-white border border-outline-variant/30 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 rounded-lg">
+					<div class="h-48 overflow-hidden">
+						<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_eGap-9xJAoSM15MY6Yjn6qMjM8gruceANqmIH_k9LLitxixxiN3myNzdBiKx0Tzyw7TooOOFvwCGKwEDWdmmx5s11ivOat1fH2RyvpJWS0vUeu57Rcn6dD5Od35F2et0LtPuA2Ol8vFHWhAutRk0QSpKY3mvzwSWiNHe0LPFlXAMEU2vlkfS_CpXu9RCFfvNauk2y_hxCYQ1M6zVgZX6IfkbcVH-OXRcK2yIi2NaaJCKWFoAfi1I0sOKbmdbk8ytM91_3ZNXwCY" alt="V60" />
+					</div>
+					<div class="p-6 space-y-4">
+						<div class="flex justify-between items-start">
+							<h3 class="text-2xl font-serif font-bold text-primary">Hario V60</h3>
+							<span class="material-symbols-outlined text-surface-tint">coffee_maker</span>
+						</div>
+						<div class="grid grid-cols-2 gap-2">
+							<div class="bg-surface-container-low p-2 rounded">
+								<p class="text-[9px] uppercase font-bold text-surface-tint tracking-widest">Difficulty</p>
+								<p class="text-xs font-bold">Expert</p>
+							</div>
+							<div class="bg-surface-container-low p-2 rounded">
+								<p class="text-[9px] uppercase font-bold text-surface-tint tracking-widest">Time</p>
+								<p class="text-xs font-bold">3:00</p>
+							</div>
+						</div>
+						<p class="text-sm text-on-surface-variant line-clamp-3 italic leading-relaxed">Produces a clean, bright cup that highlights complex floral and citrus notes in light roasts.</p>
+						<button class="w-full bg-primary text-white py-3 text-xs font-bold uppercase tracking-widest rounded hover:bg-stone-800 transition-colors">Explore Technique</button>
+					</div>
+				</div>
+
+				<!-- Chemex Card -->
+				<div class="group bg-white border border-outline-variant/30 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 rounded-lg">
+					<div class="h-48 overflow-hidden">
+						<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc9Al1TeQW1nevNuunDsOz7Gr-_o1ILvDdFa8LflMhwD9GigOZjkpr1ExB9QjjYuQTTb60ZahZP2RTYS0DwSH8bEo9_MRfU9J8wPx6g93d4mrjF_eZMB8gb7C1K0HG6365xN8v-4jHCFJ8xdKdbHeZSlMNfe-0TQpigtATY9avcmHjFvqST-wqaTHXqL9axKdfH88Pm_weKCD0it5nsvEhwmBsCACrDws7cw_Ae-VAM9ufNK0T5heAarMKAFDyB-CrO2SjVUZ9uC0" alt="Chemex" />
+					</div>
+					<div class="p-6 space-y-4">
+						<div class="flex justify-between items-start">
+							<h3 class="text-2xl font-serif font-bold text-primary">Chemex</h3>
+							<span class="material-symbols-outlined text-surface-tint">eco</span>
+						</div>
+						<div class="grid grid-cols-2 gap-2">
+							<div class="bg-surface-container-low p-2 rounded">
+								<p class="text-[9px] uppercase font-bold text-surface-tint tracking-widest">Difficulty</p>
+								<p class="text-xs font-bold">Intermediate</p>
+							</div>
+							<div class="bg-surface-container-low p-2 rounded">
+								<p class="text-[9px] uppercase font-bold text-surface-tint tracking-widest">Time</p>
+								<p class="text-xs font-bold">4:30</p>
+							</div>
+						</div>
+						<p class="text-sm text-on-surface-variant line-clamp-3 italic leading-relaxed">Elegant glass design combined with thick filters for an exceptionally clean and crisp sediment-free cup.</p>
+						<button class="w-full bg-primary text-white py-3 text-xs font-bold uppercase tracking-widest rounded hover:bg-stone-800 transition-colors">Explore Technique</button>
+					</div>
+				</div>
+
+				<!-- French Press -->
+				<div class="group bg-white border border-outline-variant/30 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 rounded-lg">
+					<div class="h-48 overflow-hidden">
+						<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjv8IBWeQv9UjjaOwaSvpTJvanvEM9mkyldH-11cFizst_MBaCLcIs79LQ2rEiffBX0hvt9SQbvcmr9JlvFqsLBEShIs8sIiNfPOSd5X19FwirPWrnz5ihAGCj65szqcv_ojrhBkheXzbgCZ7ZJqC1W-gQyNElTXRU1NKCEigv8eWPjj2V144zgqFGVWXJMXXFwriJ6d25L8zV2NvJazdGNP9035pH0v_7dzRoeASudc-za51pB5o_Uxx6L9S10egRecoE2-Ykvms" alt="French Press" />
+					</div>
+					<div class="p-6 space-y-4">
+						<div class="flex justify-between items-start">
+							<h3 class="text-2xl font-serif font-bold text-primary">French Press</h3>
+							<span class="material-symbols-outlined text-surface-tint">history_edu</span>
+						</div>
+						<div class="grid grid-cols-2 gap-2">
+							<div class="bg-surface-container-low p-2 rounded">
+								<p class="text-[9px] uppercase font-bold text-surface-tint tracking-widest">Difficulty</p>
+								<p class="text-xs font-bold">Easy</p>
+							</div>
+							<div class="bg-surface-container-low p-2 rounded">
+								<p class="text-[9px] uppercase font-bold text-surface-tint tracking-widest">Time</p>
+								<p class="text-xs font-bold">4:00</p>
+							</div>
+						</div>
+						<p class="text-sm text-on-surface-variant line-clamp-3 italic leading-relaxed">Classic immersion brewing that delivers a heavy body and robust oils for a rich, textured experience.</p>
+						<button class="w-full bg-primary text-white py-3 text-xs font-bold uppercase tracking-widest rounded hover:bg-stone-800 transition-colors">Explore Technique</button>
+					</div>
+				</div>
+
+				<!-- AeroPress -->
+				<div class="group bg-white border border-outline-variant/30 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 rounded-lg">
+					<div class="h-48 overflow-hidden">
+						<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXx2NYMu3G8nwh7tK0kvRwit65WtCauXRUC8gURfxxV9Wv0JHHpji4MzqZ5Q6fG0qjDh1kpwNNL2-qPRCZd2mB7ZM8Jmp35kdP3iF7C50IgyRaDzFjbGAKDRVwGBjqzM7iuqD3iORX-eNoXLdDFIIUGI3eGFVX23VI4pgzUuUZF-Mm0utqLRlFqMCo_1sXevLuPBg9yHdWLEzn-imc7bsBO2ZoMShayuJlWdpL_hPaUoHrCvsGJQIjSvKo6lIs1DLQK3rl8TqRnfU" alt="AeroPress" />
+					</div>
+					<div class="p-6 space-y-4">
+						<div class="flex justify-between items-start">
+							<h3 class="text-2xl font-serif font-bold text-primary">AeroPress</h3>
+							<span class="material-symbols-outlined text-surface-tint">menu_book</span>
+						</div>
+						<div class="grid grid-cols-2 gap-2">
+							<div class="bg-surface-container-low p-2 rounded">
+								<p class="text-[9px] uppercase font-bold text-surface-tint tracking-widest">Difficulty</p>
+								<p class="text-xs font-bold">Intermediate</p>
+							</div>
+							<div class="bg-surface-container-low p-2 rounded">
+								<p class="text-[9px] uppercase font-bold text-surface-tint tracking-widest">Time</p>
+								<p class="text-xs font-bold">2:00</p>
+							</div>
+						</div>
+						<p class="text-sm text-on-surface-variant line-clamp-3 italic leading-relaxed">The ultimate travel companion. Versatile enough for espresso-like shots or delicate filter-style brew.</p>
+						<button class="w-full bg-primary text-white py-3 text-xs font-bold uppercase tracking-widest rounded hover:bg-stone-800 transition-colors">Explore Technique</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Tactile Subscription -->
+		<section class="mt-24 bg-surface-container p-12 border border-outline-variant rounded-xl text-center max-w-4xl mx-auto shadow-inner bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')]">
+			<h2 class="text-4xl font-serif font-bold text-primary mb-4 italic">Refine Your Ritual</h2>
+			<p class="text-lg text-on-surface-variant mb-8 italic">Join 12,000 coffee enthusiasts for weekly brewing guides and curated bean reviews delivered to your inbox.</p>
+			<form class="flex flex-col md:flex-row gap-4 justify-center">
+				<input class="bg-transparent border-b-2 border-stone-400 focus:border-primary focus:ring-0 px-4 py-2 font-serif text-lg md:min-w-[300px]" placeholder="Your email address" type="email" />
+				<button class="bg-primary text-white px-10 py-3 text-xs font-bold uppercase tracking-[0.2em] hover:bg-stone-800 transition-all rounded shadow-lg">Subscribe</button>
+			</form>
+		</section>
+	</div>
+</MainLayout>

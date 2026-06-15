@@ -1,0 +1,93 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Travel Journal & Heritage">
+	<div class="max-w-7xl mx-auto px-6 py-12 space-y-24">
+		<header class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+			<div class="space-y-8">
+				<span class="text-xs text-on-tertiary-container uppercase tracking-[0.4em] font-black border-l-4 border-amber-600 pl-4">Third Space Chronicles</span>
+				<h1 class="text-7xl font-serif font-black text-primary leading-tight">Travel & Heritage</h1>
+				<p class="text-2xl text-on-surface-variant italic leading-relaxed">
+					An exploration of the world's most historic coffee houses and the evolving culture of the 'third space' from Vienna to Tokyo.
+				</p>
+				<div class="flex gap-6 items-center">
+					<div class="flex -space-x-4">
+						<img class="w-12 h-12 rounded-full border-4 border-white object-cover" src="https://i.pravatar.cc/100?u=1" alt="Author" />
+						<img class="w-12 h-12 rounded-full border-4 border-white object-cover" src="https://i.pravatar.cc/100?u=2" alt="Author" />
+						<img class="w-12 h-12 rounded-full border-4 border-white object-cover" src="https://i.pravatar.cc/100?u=3" alt="Author" />
+					</div>
+					<p class="text-xs font-bold uppercase tracking-widest text-[#aa9084]">Curated by the Heritage Collective</p>
+				</div>
+			</div>
+			<div class="relative group">
+				<img class="rounded-lg shadow-2xl transition-all duration-1000 group-hover:scale-[1.01]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCumEB4tKwB-FR8_ZiyXiV5QDy5XPm4htZc2D433dsx_UWAWiJWY_C0E3qM_48FMe1Nyb7WZZx1WThqmwCwvNZSaqSs7J839CzzWE2xLNs2bru5zBEILqY2ahU40LclBe0ubIPkJpwUCNU2kWOHd7zwe9CrUc_PBj1sQT7CkCkFziQ_UFMQ5blO3cIWUV95p0uy4M6N4o_-Xdcq1MZyF_ta57zrel3Uu6SDg6_xOA59s4qZoFjorX-CJhHTbFz1CwM8yylJyK7Elng" alt="Classic Cafe" />
+				<div class="absolute -bottom-8 -left-8 bg-stone-900 text-white p-8 rounded-lg shadow-2xl max-w-xs hidden lg:block">
+					<p class="font-serif italic text-lg text-stone-300">"The café is a stage where the drama of modern life plays out in slow motion."</p>
+				</div>
+			</div>
+		</header>
+
+		<!-- Travel Map/List -->
+		<section class="space-y-12">
+			<div class="flex justify-between items-end border-b border-primary/10 pb-4">
+				<h2 class="text-3xl font-serif font-black italic">Heritage Destinations</h2>
+				<span class="text-xs uppercase font-bold tracking-widest text-stone-400">Vol. IV: The Old World Elite</span>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+				<div class="space-y-6 group cursor-pointer">
+					<div class="overflow-hidden rounded-lg">
+						<img class="w-full h-[400px] object-cover transition-all duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ1SatMxc5ITt6xhiPJ_YiXU4RVRR9ThxF8vEhJVC-IHWUj7mXZAAzsxA0D7zpAqnL0LTq_FrMXIBftaUH3Q0dJcnEwNewTlahDPsMa1sDmb3pfqs5d6EHbsZRFhf6I3dVQk-wAqLjfuo8KxzfV394dv__kN58pfQTUo4ud0QMaLCPNsZtKj2lB94jiS42YDW5AooeUMvr2W-t5N7nq2Gri2Fizlr1AYC1n1_6H9lajnjTvbEeTyfgnpcGNU089ohSR3nf6QGNbKE" alt="Vienna Cafe" onerror="this.src='https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800'" />
+					</div>
+					<div class="space-y-2">
+						<div class="flex justify-between items-center text-[10px] font-bold uppercase tracking-[0.2em] text-[#aa9084]">
+							<span>Vienna, Austria</span>
+							<span>Est. 1876</span>
+						</div>
+						<h3 class="text-3xl font-serif font-bold text-primary italic leading-tight group-hover:text-amber-700 transition-colors">Café Central: The Intellectual Forge</h3>
+						<p class="text-on-surface-variant leading-relaxed font-serif italic text-sm">Where Freud and Trotsky once sat, the tradition of the 'Kaffeehaus' culture remains a preserved ritual of marble, newspapers, and dark roasts.</p>
+					</div>
+				</div>
+
+				<div class="space-y-6 group cursor-pointer lg:mt-12">
+					<div class="overflow-hidden rounded-lg">
+						<img class="w-full h-[400px] object-cover transition-all duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ1SatMxc5ITt6xhiPJ_YiXU4RVRR9ThxF8vEhJVC-IHWUj7mXZAAzsxA0D7zpAqnL0LTq_FrMXIBftaUH3Q0dJcnEwNewTlahDPsMa1sDmb3pfqs5d6EHbsZRFhf6I3dVQk-wAqLjfuo8KxzfV394dv__kN58pfQTUo4ud0QMaLCPNsZtKj2lB94jiS42YDW5AooeUMvr2W-t5N7nq2Gri2Fizlr1AYC1n1_6H9lajnjTvbEeTyfgnpcGNU089ohSR3nf6QGNbKE" alt="Venice Cafe" onerror="this.src='https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&q=80&w=800'" />
+					</div>
+					<div class="space-y-2">
+						<div class="flex justify-between items-center text-[10px] font-bold uppercase tracking-[0.2em] text-[#aa9084]">
+							<span>Venice, Italy</span>
+							<span>Est. 1720</span>
+						</div>
+						<h3 class="text-3xl font-serif font-bold text-primary italic leading-tight group-hover:text-amber-700 transition-colors">Caffè Florian: The Piazza's Living Room</h3>
+						<p class="text-on-surface-variant leading-relaxed font-serif italic text-sm">The oldest functioning café in the world, a testament to the enduring power of the espresso ritual amidst Byzantine splendor.</p>
+					</div>
+				</div>
+
+				<div class="space-y-6 group cursor-pointer">
+					<div class="overflow-hidden rounded-lg">
+						<img class="w-full h-[400px] object-cover transition-all duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ1SatMxc5ITt6xhiPJ_YiXU4RVRR9ThxF8vEhJVC-IHWUj7mXZAAzsxA0D7zpAqnL0LTq_FrMXIBftaUH3Q0dJcnEwNewTlahDPsMa1sDmb3pfqs5d6EHbsZRFhf6I3dVQk-wAqLjfuo8KxzfV394dv__kN58pfQTUo4ud0QMaLCPNsZtKj2lB94jiS42YDW5AooeUMvr2W-t5N7nq2Gri2Fizlr1AYC1n1_6H9lajnjTvbEeTyfgnpcGNU089ohSR3nf6QGNbKE" alt="Paris Cafe" onerror="this.src='https://images.unsplash.com/photo-1550989460-0adf9ea622e2?auto=format&fit=crop&q=80&w=800'" />
+					</div>
+					<div class="space-y-2">
+						<div class="flex justify-between items-center text-[10px] font-bold uppercase tracking-[0.2em] text-[#aa9084]">
+							<span>Paris, France</span>
+							<span>Est. 1885</span>
+						</div>
+						<h3 class="text-3xl font-serif font-bold text-primary italic leading-tight group-hover:text-amber-700 transition-colors">Café de Flore: The Existential Roastery</h3>
+						<p class="text-on-surface-variant leading-relaxed font-serif italic text-sm">The Saint-Germain cornerstone where art and philosophy met over small glasses of café noir in the post-war era.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Large Quote / Essay -->
+		<section class="max-w-4xl mx-auto text-center space-y-12 py-12 border-y border-stone-200">
+			<span class="material-symbols-outlined text-stone-300 text-6xl">format_quote</span>
+			<h2 class="text-5xl font-serif font-black italic text-primary leading-tight">"In Tokyo's subterranean kissaten, coffee is not a beverage. It is a four-hour meditation in dark wood and jazz."</h2>
+			<div class="flex flex-col items-center gap-4">
+				<div class="w-16 h-px bg-amber-600"></div>
+				<p class="text-xs font-black uppercase tracking-[0.5em] text-stone-500">Dispatch from the Shinjuku Underworld</p>
+			</div>
+			<button class="bg-primary text-white px-12 py-4 text-xs font-bold uppercase tracking-widest rounded shadow-xl hover:bg-stone-800 transition-all">Read the Full Travel Journal</button>
+		</section>
+	</div>
+</MainLayout>

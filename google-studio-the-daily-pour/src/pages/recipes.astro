@@ -1,0 +1,157 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="The Brewmaster's Recipe Book">
+	<div class="max-w-7xl mx-auto px-6 py-12 space-y-24">
+		<header class="max-w-3xl space-y-4">
+			<span class="text-xs text-on-tertiary-container uppercase tracking-[0.4em] font-black border-l-4 border-amber-600 pl-4">The Alchemy of Flavor</span>
+			<h1 class="text-6xl font-serif font-black text-primary">The Recipe Book</h1>
+			<p class="text-xl text-on-surface-variant italic leading-relaxed">
+				An collection of precise formulations, from the classic Einspänner to modern artisanal interpretations of the bean.
+			</p>
+		</header>
+
+		<!-- Recipe Categories -->
+		<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+			<button class="bg-primary text-white p-6 rounded-lg font-serif italic text-xl flex justify-between items-center shadow-lg hover:bg-stone-800 transition-colors">
+				Classic Espresso <span class="material-symbols-outlined">bolt</span>
+			</button>
+			<button class="bg-surface-container text-primary p-6 rounded-lg font-serif italic text-xl flex justify-between items-center border border-outline-variant/30 hover:bg-surface-container-high transition-colors">
+				Slow Pour <span class="material-symbols-outlined">water_drop</span>
+			</button>
+			<button class="bg-surface-container text-primary p-6 rounded-lg font-serif italic text-xl flex justify-between items-center border border-outline-variant/30 hover:bg-surface-container-high transition-colors">
+				Iced Rituals <span class="material-symbols-outlined">ac_unit</span>
+			</button>
+			<button class="bg-surface-container text-primary p-6 rounded-lg font-serif italic text-xl flex justify-between items-center border border-outline-variant/30 hover:bg-surface-container-high transition-colors">
+				Milk Craft <span class="material-symbols-outlined">egg</span>
+			</button>
+		</section>
+
+		<!-- Featured Recipe Card -->
+		<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+			<div class="lg:col-span-12">
+				<div class="flex items-center gap-4 mb-8">
+					<h2 class="text-3xl font-serif font-black italic">Signature Masterclass</h2>
+					<div class="flex-grow h-px bg-stone-200"></div>
+				</div>
+			</div>
+			
+			<!-- Recipe Detail -->
+			<div class="lg:col-span-7 bg-white p-12 rounded-3xl shadow-2xl border border-stone-100 space-y-8">
+				<div class="space-y-4">
+					<div class="flex justify-between items-start">
+						<h3 class="text-5xl font-serif font-bold text-primary italic leading-tight">The Viennese Einspänner</h3>
+						<span class="bg-amber-100 text-amber-900 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest self-start">Historical</span>
+					</div>
+					<p class="text-lg text-on-surface-variant italic leading-relaxed">A powerful double espresso topped with a heavy, cool crown of whipped cream. Tradition dictates you do not stir; allow the hot coffee to filter through the velvet cream.</p>
+				</div>
+
+				<div class="grid grid-cols-3 gap-6 py-8 border-y border-stone-100">
+					<div class="text-center space-y-1">
+						<p class="text-[10px] uppercase font-bold text-stone-400 tracking-widest">Prep Time</p>
+						<p class="font-bold">5 min</p>
+					</div>
+					<div class="text-center space-y-1 border-x border-stone-100">
+						<p class="text-[10px] uppercase font-bold text-stone-400 tracking-widest">Serves</p>
+						<p class="font-bold">1 Ritual</p>
+					</div>
+					<div class="text-center space-y-1">
+						<p class="text-[10px] uppercase font-bold text-stone-400 tracking-widest">Difficulty</p>
+						<p class="font-bold">Moderate</p>
+					</div>
+				</div>
+
+				<div class="space-y-6">
+					<h4 class="text-xs uppercase font-black tracking-[0.3em] text-stone-900 underline decoration-amber-600 underline-offset-8">Ingredients</h4>
+					<ul class="space-y-4 font-serif italic text-stone-700">
+						<li class="flex justify-between border-b border-stone-50 pb-2">
+							<span>Double Shot of Dark Roast Beans</span>
+							<span class="text-stone-400">18-20g</span>
+						</li>
+						<li class="flex justify-between border-b border-stone-50 pb-2">
+							<span>Chilled Heavy Cream (min 35% fat)</span>
+							<span class="text-stone-400">100ml</span>
+						</li>
+						<li class="flex justify-between border-b border-stone-50 pb-2">
+							<span>Powdered Sugar (Adjust to taste)</span>
+							<span class="text-stone-400">1 tsp</span>
+						</li>
+						<li class="flex justify-between border-b border-stone-50 pb-2">
+							<span>Dusting of Unsweetened Cocoa</span>
+							<span class="text-stone-400">Pinch</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Brewing Steps -->
+			<div class="lg:col-span-5 space-y-8 pt-8">
+				<h4 class="text-xs uppercase font-black tracking-[0.3em] text-stone-900 border-l-4 border-primary pl-4">The Method</h4>
+				<div class="space-y-12">
+					<div class="flex gap-6 items-start relative">
+						<div class="absolute left-4 top-10 bottom-0 w-px bg-stone-100 -z-10"></div>
+						<div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
+						<div class="space-y-2">
+							<h5 class="text-xl font-serif font-black italic">The Espresso Base</h5>
+							<p class="text-sm text-on-surface-variant leading-relaxed">Pull a concentrated double shot into a chilled glass tumbler. Aim for a rich crema and deep chocolatey notes.</p>
+						</div>
+					</div>
+					<div class="flex gap-6 items-start relative">
+						<div class="absolute left-4 top-10 bottom-0 w-px bg-stone-100 -z-10"></div>
+						<div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
+						<div class="space-y-2">
+							<h5 class="text-xl font-serif font-black italic">The Velvet Cream</h5>
+							<p class="text-sm text-on-surface-variant leading-relaxed">Whip the heavy cream and sugar until it forms stiff peaks. It must be cold enough to contrast the heat of the coffee.</p>
+						</div>
+					</div>
+					<div class="flex gap-6 items-start relative">
+						<div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
+						<div class="space-y-2">
+							<h5 class="text-xl font-serif font-black italic">The Assemblage</h5>
+							<p class="text-sm text-on-surface-variant leading-relaxed">Gently spoon the cream over the espresso. Do not shake. Dust lightly with cocoa and serve immediately.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-surface-container p-8 rounded-xl border border-outline-variant/30 mt-12">
+					<h5 class="text-sm font-black uppercase tracking-widest mb-4 flex items-center gap-2">
+						<span class="material-symbols-outlined text-amber-700">lightbulb</span> Pro Tip
+					</h5>
+					<p class="text-sm text-on-surface-variant font-serif italic leading-relaxed">For a truly authentic Viennese experience, serve in a high-handle glass cup on a silver tray with a small glass of water aside.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Other Recipes List -->
+		<section class="space-y-8">
+			<div class="flex items-center gap-4">
+				<h2 class="text-2xl font-serif font-black italic">The Archive</h2>
+				<div class="flex-grow h-px bg-stone-200"></div>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div class="group cursor-pointer space-y-4">
+					<div class="aspect-video bg-stone-100 rounded-lg overflow-hidden border border-stone-200 relative">
+						<img class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ1SatMxc5ITt6xhiPJ_YiXU4RVRR9ThxF8vEhJVC-IHWUj7mXZAAzsxA0D7zpAqnL0LTq_FrMXIBftaUH3Q0dJcnEwNewTlahDPsMa1sDmb3pfqs5d6EHbsZRFhf6I3dVQk-wAqLjfuo8KxzfV394dv__kN58pfQTUo4ud0QMaLCPNsZtKj2lB94jiS42YDW5AooeUMvr2W-t5N7nq2Gri2Fizlr1AYC1n1_6H9lajnjTvbEeTyfgnpcGNU089ohSR3nf6QGNbKE" alt="Kyoto Cold Brew" onerror="this.src='https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&q=80&w=800'" />
+						<div class="absolute top-2 right-2 bg-stone-900/80 text-white text-[9px] px-2 py-1 rounded uppercase font-bold tracking-widest">12 Hours</div>
+					</div>
+					<h4 class="text-xl font-serif font-bold italic text-primary hover:text-amber-700 transition-colors">Kyoto-Style Oji Cold Brew</h4>
+				</div>
+				<div class="group cursor-pointer space-y-4">
+					<div class="aspect-video bg-stone-100 rounded-lg overflow-hidden border border-stone-200 relative">
+						<img class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ1SatMxc5ITt6xhiPJ_YiXU4RVRR9ThxF8vEhJVC-IHWUj7mXZAAzsxA0D7zpAqnL0LTq_FrMXIBftaUH3Q0dJcnEwNewTlahDPsMa1sDmb3pfqs5d6EHbsZRFhf6I3dVQk-wAqLjfuo8KxzfV394dv__kN58pfQTUo4ud0QMaLCPNsZtKj2lB94jiS42YDW5AooeUMvr2W-t5N7nq2Gri2Fizlr1AYC1n1_6H9lajnjTvbEeTyfgnpcGNU089ohSR3nf6QGNbKE" alt="Flat White" onerror="this.src='https://images.unsplash.com/photo-1541167760496-162955ed8a9f?auto=format&fit=crop&q=80&w=800'" />
+						<div class="absolute top-2 right-2 bg-stone-900/80 text-white text-[9px] px-2 py-1 rounded uppercase font-bold tracking-widest">Mastery</div>
+					</div>
+					<h4 class="text-xl font-serif font-bold italic text-primary hover:text-amber-700 transition-colors">The Antipodean Flat White</h4>
+				</div>
+				<div class="group cursor-pointer space-y-4">
+					<div class="aspect-video bg-stone-100 rounded-lg overflow-hidden border border-stone-200 relative">
+						<img class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ1SatMxc5ITt6xhiPJ_YiXU4RVRR9ThxF8vEhJVC-IHWUj7mXZAAzsxA0D7zpAqnL0LTq_FrMXIBftaUH3Q0dJcnEwNewTlahDPsMa1sDmb3pfqs5d6EHbsZRFhf6I3dVQk-wAqLjfuo8KxzfV394dv__kN58pfQTUo4ud0QMaLCPNsZtKj2lB94jiS42YDW5AooeUMvr2W-t5N7nq2Gri2Fizlr1AYC1n1_6H9lajnjTvbEeTyfgnpcGNU089ohSR3nf6QGNbKE" alt="Chemex Ritual" onerror="this.src='https://images.unsplash.com/photo-1544787210-282aa518d6bc?auto=format&fit=crop&q=80&w=800'" />
+						<div class="absolute top-2 right-2 bg-stone-900/80 text-white text-[9px] px-2 py-1 rounded uppercase font-bold tracking-widest">Slow Pour</div>
+					</div>
+					<h4 class="text-xl font-serif font-bold italic text-primary hover:text-amber-700 transition-colors">Cascara Tea Infusion</h4>
+				</div>
+			</div>
+		</section>
+	</div>
+</MainLayout>

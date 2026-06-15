@@ -1,0 +1,158 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Equipment & Gear Reviews">
+	<div class="max-w-7xl mx-auto px-6 py-12 space-y-20">
+		<header class="text-center space-y-4 max-w-3xl mx-auto">
+			<span class="text-xs text-on-tertiary-container uppercase tracking-[0.4em] font-black">The Connoisseur's Toolkit</span>
+			<h1 class="text-6xl font-serif font-black text-primary italic">Equipment Reviews</h1>
+			<p class="text-xl text-on-surface-variant italic leading-relaxed">
+				Rigorous field-testing of the world's most innovative brewing devices, grinders, and peripherals. No fluff, just craft.
+			</p>
+		</header>
+
+		<!-- Featured Review -->
+		<section class="bg-surface-container-high rounded-3xl overflow-hidden border border-outline-variant/30 shadow-2xl">
+			<div class="grid grid-cols-1 lg:grid-cols-2">
+				<div class="p-12 space-y-8 flex flex-col justify-center">
+					<div class="flex items-center gap-4">
+						<span class="bg-primary text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Editor's Choice</span>
+						<div class="flex text-amber-500">
+							<span class="material-symbols-outlined fill-1">star</span>
+							<span class="material-symbols-outlined fill-1">star</span>
+							<span class="material-symbols-outlined fill-1">star</span>
+							<span class="material-symbols-outlined fill-1">star</span>
+							<span class="material-symbols-outlined fill-1 opacity-50">star</span>
+						</div>
+					</div>
+					<h2 class="text-5xl font-serif font-bold text-primary leading-tight">The Weber Workshops HG-2: Engineering Perfection or Overkill?</h2>
+					<p class="text-lg text-on-surface-variant leading-relaxed italic">At looking at the manual grinder that claims to redefine the standard for home espresso, we examine if the $1,500 price tag matches the performance in the cup.</p>
+					<div class="grid grid-cols-2 gap-8 border-y border-outline-variant/50 py-8">
+						<div>
+							<h4 class="text-xs uppercase font-black text-stone-500 tracking-widest mb-2">The Pros</h4>
+							<ul class="text-sm font-serif italic space-y-2">
+								<li class="flex gap-2"><span class="text-emerald-600">+</span> Bulletproof Build</li>
+								<li class="flex gap-2"><span class="text-emerald-600">+</span> Zero Retention</li>
+								<li class="flex gap-2"><span class="text-emerald-600">+</span> Best-in-class Burrs</li>
+							</ul>
+						</div>
+						<div>
+							<h4 class="text-xs uppercase font-black text-stone-500 tracking-widest mb-2">The Cons</h4>
+							<ul class="text-sm font-serif italic space-y-2">
+								<li class="flex gap-2"><span class="text-rose-600">-</span> Prohibitive Price</li>
+								<li class="flex gap-2"><span class="text-rose-600">-</span> Large Footprint</li>
+							</ul>
+						</div>
+					</div>
+					<button class="bg-primary text-white px-10 py-4 text-xs font-bold uppercase tracking-[0.2em] rounded shadow-lg hover:bg-stone-800 transition-all self-start">Read Full Review</button>
+				</div>
+				<div class="relative min-h-[500px] overflow-hidden group">
+					<img 
+						class="absolute inset-0 w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105" 
+						src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHXn0hYdK-r5n-0w_A0r690I6D11pQ_fE8C6C388l5pW7_F5W4zX64B47U66A4E5L46B3O4E6A4C6A5f7-f5p8-P7z6X2V5u-z8W1P7n-N4Z2r_o1p6e7Q6Z6c6u-k6y-w7Z6x-u-k6y-w7Z6x-u-k6y-w" 
+						alt="High-end grinder"
+						onerror="this.src='https://images.unsplash.com/photo-1579992357152-faf803753ed0?auto=format&fit=crop&q=80&w=800'"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<!-- Review Grid -->
+		<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+			<div class="space-y-6 group cursor-pointer">
+				<div class="aspect-square bg-stone-100 rounded-lg overflow-hidden border border-stone-200">
+					<img class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_eGap-9xJAoSM15MY6Yjn6qMjM8gruceANqmIH_k9LLitxixxiN3myNzdBiKx0Tzyw7TooOOFvwCGKwEDWdmmx5s11ivOat1fH2RyvpJWS0vUeu57Rcn6dD5Od35F2et0LtPuA2Ol8vFHWhAutRk0QSpKY3mvzwSWiNHe0LPFlXAMEU2vlkfS_CpXu9RCFfvNauk2y_hxCYQ1M6zVgZX6IfkbcVH-OXRcK2yIi2NaaJCKWFoAfi1I0sOKbmdbk8ytM91_3ZNXwCY" alt="Acaia Lunar Scale" />
+				</div>
+				<div class="space-y-4">
+					<div class="flex justify-between items-center">
+						<span class="text-[10px] uppercase font-bold tracking-widest text-[#aa9084]">Peripherals</span>
+						<span class="text-sm font-bold">9.4 / 10</span>
+					</div>
+					<h3 class="text-2xl font-serif font-bold text-primary italic leading-tight group-hover:text-amber-700 transition-colors">The Acaia Lunar: Five Years On, Still the King?</h3>
+					<p class="text-sm text-stone-500 leading-relaxed font-serif italic">Why this tiny water-resistant scale became the industry standard for espresso precision.</p>
+				</div>
+			</div>
+
+			<div class="space-y-6 group cursor-pointer">
+				<div class="aspect-square bg-stone-100 rounded-lg overflow-hidden border border-stone-200">
+					<img class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc9Al1TeQW1nevNuunDsOz7Gr-_o1ILvDdFa8LflMhwD9GigOZjkpr1ExB9QjjYuQTTb60ZahZP2RTYS0DwSH8bEo9_MRfU9J8wPx6g93d4mrjF_eZMB8gb7C1K0HG6365xN8v-4jHCFJ8xdKdbHeZSlMNfe-0TQpigtATY9avcmHjFvqST-wqaTHXqL9axKdfH88Pm_weKCD0it5nsvEhwmBsCACrDws7cw_Ae-VAM9ufNK0T5heAarMKAFDyB-CrO2SjVUZ9uC0" alt="Fellow Stagg EKG" />
+				</div>
+				<div class="space-y-4">
+					<div class="flex justify-between items-center">
+						<span class="text-[10px] uppercase font-bold tracking-widest text-[#aa9084]">Kettles</span>
+						<span class="text-sm font-bold">8.8 / 10</span>
+					</div>
+					<h3 class="text-2xl font-serif font-bold text-primary italic leading-tight group-hover:text-amber-700 transition-colors">Mastering the Flow: Fellow Stagg EKG Long-Term Use</h3>
+					<p class="text-sm text-stone-500 leading-relaxed font-serif italic">Esthetic brilliance meets ergonomic pour control. Is it worth the premium over standard goosenecks?</p>
+				</div>
+			</div>
+
+			<div class="space-y-6 group cursor-pointer">
+				<div class="aspect-square bg-stone-100 rounded-lg overflow-hidden border border-stone-200">
+					<img class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJi6X1XCGgk7ik-vBiUIwHxt8YxAWZM23lCgjehb9O8kIONKOLgv1rtv24KbG87rgNmi7Y5zJNoRm27hFsIYyn2XI-yQf2qktQh4X3WOeE3A2ENZs693qOiEQ8WNUI51LDIq247_w9jU6KdhtWWCw-hPkL28XRBZdPHetelc_nidk7SMFENXBDEp-pE8K9pXi20vmS88cKZNXfTAQHn2hEZe9ZOguIDwgZJL2I7IH0f_2_PQBIVJUtxpu8CIAaOaBwCLTvdkeYk5I" alt="Technivorm Moccamaster" />
+				</div>
+				<div class="space-y-4">
+					<div class="flex justify-between items-center">
+						<span class="text-[10px] uppercase font-bold tracking-widest text-[#aa9084]">Drip Machines</span>
+						<span class="text-sm font-bold">9.0 / 10</span>
+					</div>
+					<h3 class="text-2xl font-serif font-bold text-primary italic leading-tight group-hover:text-amber-700 transition-colors">The Immortal Moccamaster: A Multi-Generational Review</h3>
+					<p class="text-sm text-stone-500 leading-relaxed font-serif italic">Testing the KBGV Select for consistent temperature control and thermal stability.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Comparison Table -->
+		<section class="mt-32">
+			<div class="text-center mb-12">
+				<h2 class="text-4xl font-serif font-black italic">The Grind Battle</h2>
+				<p class="text-[#aa9084] font-bold uppercase tracking-widest text-xs mt-2">Manual vs Electric Grinders</p>
+			</div>
+			<div class="overflow-x-auto">
+				<table class="w-full border-collapse border border-stone-200">
+					<thead class="bg-stone-50">
+						<tr>
+							<th class="p-6 text-left border border-stone-200 font-serif italic text-primary">Feature</th>
+							<th class="p-6 text-center border border-stone-200 font-serif italic text-primary">Commandante C40</th>
+							<th class="p-6 text-center border border-stone-200 font-serif italic text-primary">Ode Gen 2</th>
+							<th class="p-6 text-center border border-stone-200 font-serif italic text-primary">Niche Zero</th>
+						</tr>
+					</thead>
+					<tbody class="text-sm font-serif italic">
+						<tr>
+							<td class="p-6 border border-stone-200 font-bold bg-stone-50/50">Primary Use</td>
+							<td class="p-6 border border-stone-200 text-center">Filter / Travel</td>
+							<td class="p-6 border border-stone-200 text-center">Dedicated Filter</td>
+							<td class="p-6 border border-stone-200 text-center">Dedicated Espresso</td>
+						</tr>
+						<tr>
+							<td class="p-6 border border-stone-200 font-bold bg-stone-50/50">Retention</td>
+							<td class="p-6 border border-stone-200 text-center text-emerald-600">Zero</td>
+							<td class="p-6 border border-stone-200 text-center text-stone-600">Low (&lt; 0.1g)</td>
+							<td class="p-6 border border-stone-200 text-center text-emerald-600">Zero</td>
+						</tr>
+						<tr>
+							<td class="p-6 border border-stone-200 font-bold bg-stone-50/50">Noise Level</td>
+							<td class="p-6 border border-stone-200 text-center text-emerald-600">Silent</td>
+							<td class="p-6 border border-stone-200 text-center text-stone-600">Low Hum</td>
+							<td class="p-6 border border-stone-200 text-center text-amber-600">Moderate</td>
+						</tr>
+						<tr>
+							<td class="p-6 border border-stone-200 font-bold bg-stone-50/50">Price Point</td>
+							<td class="p-6 border border-stone-200 text-center">$350</td>
+							<td class="p-6 border border-stone-200 text-center">$495</td>
+							<td class="p-6 border border-stone-200 text-center">$700</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</div>
+</MainLayout>
+
+<style>
+	.fill-1 {
+		font-variation-settings: 'FILL' 1;
+	}
+</style>
